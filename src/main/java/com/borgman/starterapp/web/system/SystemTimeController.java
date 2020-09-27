@@ -10,7 +10,7 @@ public class SystemTimeController {
 
 	@GetMapping("/api/system/time")
 	public String time() {
-		return "Hello, the time at the server is now " + new Date() + "\n";
+		return "Hello, the time at the server is now " + new Date();
 	}
 
 }
