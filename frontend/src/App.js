@@ -1,16 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Login from './components/Login'
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <header className="Header">
-                    <h1 className="App-title">Starter App</h1>
-                </header>
-                <Login />
+            <div>
+                <div style={{ color: "white", backgroundColor: "red", height: "20px", position: "absolute", top: "0px", width: "100%" }}>
+                    Header
+                </div>
 
+                <div className="App">
+
+                    <Login />
+
+                </div>
+
+                <div style={{ color: "white", backgroundColor: "red", height: "20px", position: "absolute", bottom: "0px", width: "100%" }}>
+                    Footer
+                </div>
             </div>
         )
     }
