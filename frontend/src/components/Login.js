@@ -13,7 +13,7 @@ class Login extends Component {
 
     login = () => {
         const user = { userName: this.state.username, password: this.state.password };
-        fetch('http://127.0.0.1:8080/login', {
+        fetch('/login', {
             method: 'POST',
             body: JSON.stringify(user)
         })
